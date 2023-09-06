@@ -9,19 +9,25 @@ public class ArvausPeli {
 		answer="Terhi";
 		
 		System.out.println("Guess my name.");
-		answer = in.nextLine();
+		do {
+			
+			answer = in.nextLine();
+			if(!answer.equals("Terhi")) {
+				System.out.println("You are wrong!Guess again!");
+			}
+			else{
+				System.out.println("You are right!");
+			}
+		}while (!answer.equals("Terhi"));
 		
-		if(!answer.equals("Terhi")) {
-			System.out.println("You are wrong!");
-		}
-		else {
-			System.out.println("You are right!");
-		}
+
+		
+
 		
 		
 		
 		
 
-	}
+		}
 
 }
